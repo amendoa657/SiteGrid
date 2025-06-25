@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+
+
+
+
+nav {
+    display: grid;
+    height: 100vh;
+    background-color: white;
+    grid-template-rows: 90px 1fr;
+    position: fixed;
+    width: 90px;
+    z-index: 100;
+}
+
+
+.imagens, main {
+    margin-left: 90px;
+}
+.divMenu {
+    background-color: #0f0f0f;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.divMenu input {
+    position: absolute;
+    left: 45px;
+    top: 20px;
+    transform: translate(-50%, 50%);
+    width: 50%;
+    height: 3%;
+    opacity: 0;
+}
+
+
+.menu {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    position: absolute;
+    height: 100vh;
+    width: 270px;
+    background-color: white;
+    top: 0;
+    left: -270px;
+    z-index: 99;
+    transition: 0.3s;
+
+
+}
+
+.divMenu input:checked~.menu{
+    left: 0;
+}
+
+
+
+
+.saidaMenu {
+    display: flex;
+}
+
+.esquerdaSaida {
+    background-color: #0f0f0f;
+    width: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerdaSaida input {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.direitaSaida {
+    background-color: #2916e2;
+    height: 100%;
+    flex-grow: 1;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.itensMenu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.botoesMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 35vh;
+    padding-top: 69%;
+
+}
+
+.botoesMenu  a {
+    color: rgba(0, 0, 0, 0.329);
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    margin-top: 20%;
+}
+
+.botoesMenu a:hover {
+    color: #2916e2;
+    transition: 0.3s;
+}
+
+.inferiorMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 80%;
+}
+
+.redesSociaisMenu  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.redesSociaisMenu i {
+    color: rgba(0, 0, 0, 0.329);
+    font-size: 18px;
+}
+
+
+.textoInferiorMenu {
+    text-align: center;
+    width: 100%;
+}
+
+.textoInferiorMenu h2 {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.603);
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+
+
+
+.redesSociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redesSociais div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 258px;
+    flex-direction: column;
+}
+.redesSociais div i {
+    color: #000000;
+    font-size: 18px;
+}
+
+
+
+main {
+    height: 100vh;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 11%;
+    padding-right: 4%;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+}
+
+header h2 {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header ul {
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header li{
+    display: inline;
+
+}
+
+
+.galeria {
+
+}
