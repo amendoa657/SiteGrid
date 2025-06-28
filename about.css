@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+
+
+
+
+nav {
+    display: grid;
+    height: 100vh;
+    background-color: white;
+    grid-template-rows: 90px 1fr;
+    position: fixed;
+    width: 90px;
+    z-index: 100;
+}
+
+
+.imagens, main {
+    margin-left: 90px;
+}
+.divMenu {
+    background-color: #0f0f0f;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.divMenu input {
+    position: absolute;
+    left: 45px;
+    top: 20px;
+    transform: translate(-50%, 50%);
+    width: 50%;
+    height: 3%;
+    opacity: 0;
+}
+
+
+.menu {
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    position: absolute;
+    height: 100vh;
+    width: 270px;
+    background-color: white;
+    top: 0;
+    left: -270px;
+    z-index: 99;
+    transition: 0.3s;
+
+
+}
+
+.divMenu input:checked~.menu{
+    left: 0;
+}
+
+
+
+
+.saidaMenu {
+    display: flex;
+}
+
+.esquerdaSaida {
+    background-color: #0f0f0f;
+    width: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerdaSaida input {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.direitaSaida {
+    background-color: #2916e2;
+    height: 100%;
+    flex-grow: 1;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.itensMenu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.botoesMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 35vh;
+    padding-top: 69%;
+
+}
+
+.botoesMenu  a {
+    color: rgba(0, 0, 0, 0.329);
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+    margin-top: 20%;
+}
+
+.botoesMenu a:hover {
+    color: #2916e2;
+    transition: 0.3s;
+}
+
+.inferiorMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 80%;
+}
+
+.redesSociaisMenu  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5%;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.redesSociaisMenu i {
+    color: rgba(0, 0, 0, 0.329);
+    font-size: 18px;
+}
+
+
+.textoInferiorMenu {
+    text-align: center;
+    width: 100%;
+}
+
+.textoInferiorMenu h2 {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.603);
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+
+
+
+.redesSociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redesSociais div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 258px;
+    flex-direction: column;
+}
+.redesSociais div i {
+    color: #000000;
+    font-size: 18px;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 47% 1fr;
+}
+
+
+.esquerdaMain {
+    background-color: #2715d7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10% 18%;
+}
+
+.esquerdaMain img {
+    border-radius: 50%;
+    margin-bottom: 9%;
+}
+
+
+.textoEsquerda {
+    text-align: left;
+    width: 100%;
+}
+.textoEsquerda h1{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.textoEsquerda h6 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+
+.botaoEsquerda {
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 2% 8%;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.36);
+    margin-right: 5%;
+}
+
+.email {
+    font-style: italic;
+}
+
+
+
+
+
+
+.direitaMain {
+    background-color: white;
+    padding: 8% 8%;
+}
+
+.direitaMain h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 3%;
+    color: black;
+    padding-bottom: 1%;
+    border-bottom: 3px solid #2a17dd;
+}
+
+.direitaMain h6 {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 1%;
+    width: 98%;
+    color: black;
+}
+.about {
+    width: 185px;
+}
+.skills {
+    margin: 8% 0;
+    width: 164px;
+}
+
+
+
+
+
+.barrasProgresso {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 6%;
+}
+
+.progress {
+    position: relative;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress p {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0;
+    color: black;
+}
+
+.progress h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin-top: 10px;
+}
+
+
+#photoshop {
+    transform: rotate(-90deg);
+    transform-origin: 125px 125px;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 0;
+}
+
+#makeup {
+    transform: rotate(-90deg);
+    transform-origin: 125px 125px;
+    stroke-dasharray: 680;
+    stroke-dashoffset: 0;
+}
+
+#fashion {
+    transform: rotate(-90deg);
+    transform-origin: 125px 125px;
+    stroke-dasharray: 580;
+    stroke-dashoffset: 0;
+}
+
+#photography {
+    transform: rotate(-90deg);
+    transform-origin: 125px 125px;
+    stroke-dasharray: 610;
+    stroke-dashoffset: 0;
+}
