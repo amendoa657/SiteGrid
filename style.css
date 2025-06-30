@@ -250,10 +250,6 @@ flex-grow: 6;}
     animation-fill-mode: forwards;
 }
 
-.imagemGaleria:hover .textoImagem ~ #textoImagem1{
-    opacity: 0;
-}
-
 
 @keyframes animTexto {
 
@@ -282,9 +278,6 @@ flex-grow: 6;}
     animation-fill-mode: forwards;
 }
 
-#textoImagem1 {
-    opacity: 1;
-}
 
 .textoImagem h4 {
     font-size: 12px;
